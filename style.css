@@ -31,3 +31,29 @@ button {
     font-size: 1.2em;
     cursor: pointer;
 }
+
+.green {
+    background-color: green;
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
+
+.yellow {
+    background-color: yellow;
+    color: black;
+    padding: 10px;
+    text-align: center;
+}
+
+.gray {
+    background-color: gray;
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
+
+.row {
+    display: flex;
+    gap: 10px;
+}

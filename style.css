@@ -1,0 +1,33 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f4f4f4;
+}
+
+h1 {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+#board {
+    display: grid;
+    grid-template-columns: repeat(5, 50px);
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+#guess {
+    padding: 10px;
+    font-size: 1.2em;
+    margin-bottom: 20px;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 1.2em;
+    cursor: pointer;
+}

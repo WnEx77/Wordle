@@ -5,6 +5,23 @@ let attempts = 0;
 const board = document.getElementById('board');
 const guessInput = document.getElementById('guess');
 const submitButton = document.getElementById('submit');
+const keyboardContainer = document.getElementById('keyboard');
+
+// Create the keyboard layout
+const alphabet = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ'.split('');
+alphabet.forEach(letter => {
+    const keyButton = document.createElement('button');
+    keyButton.classList.add('key');
+    keyButton.textContent = letter;
+    keyButton.addEventListener('click', () => addLetterToGuess(letter));
+    keyboardContainer.appendChild(keyButton);
+});
+
+function addLetterToGuess(letter) {
+    if (guessInput.value.length < 5) {
+        guessInput.value += letter.toLowerCase();
+    }
+}
 
 submitButton.addEventListener('click', () => {
     const guess = guessInput.value.toLowerCase();
